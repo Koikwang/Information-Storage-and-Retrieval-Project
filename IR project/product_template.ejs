@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="index_style.css">
+        <link rel="stylesheet" href="info.css">
+        <!-- This is the title of the page -->
+        <title><%= title %></title>
+    </head>
+    <body>
+        <!-- The header bar is for switching to go between the page result and the home page.
+        Also, place an icon to go to the other channel -->
+        <header class="">
+            <nav id="header-nav" class="container">
+                <!--Logo of 7-11-->
+                <div id="header-logo">
+                    <a href="index.html">
+                        <img src="https://www.7eleven.co.th/static/imgs/logo.svg" alt="" style="margin: 10px 20px; width: 100px; border-radius: 10px;">
+                    </a>
+                </div>
+                <div class="container nav-item" style="margin: 5px;">
+                    <!--Link to Social media website-->
+                    <div class="container nav-left">
+                        <!--Facebook-->
+                        <div>
+                            <a href="https://www.facebook.com/7ElevenThailand/">
+                                <img src="image-1/fb-icon.png" alt="" class="icon">
+                            </a>
+                        </div>
+                        <!--Youtube-->
+                        <div>
+                            <a href="https://www.youtube.com/user/7ElevenThailand">
+                                <img src="image-1/yt-icon.png" alt="" class="icon">
+                            </a>
+                        </div>
+                        <!--Instagram-->
+                        <div>
+                            <a href="https://www.instagram.com/7.eleventhailand/?hl=en">
+                                <img src="image-1/ig-icon.svg" alt="" class="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container nav-right">
+                        <!--Go to search-->
+                        <div class="sign-in-icon">
+                            <a href="search.html">Search</a>
+                        </div>
+                        <!--For sign in-->
+                        <div class="sign-in-icon">
+                            <a href="SignIn.html">Sign In</a>
+                        </div>
+                        <!--For sign up-->
+                        <div class="sign-in-icon">
+                            <a href="SignUp.html">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Main area to place an information include about the specific product.
+        User able to see the all deep data relevant the product in this section.
+        -->
+        
+        <main class="day" id="output">
+            <article class="container content-area-template">
+                <div class="container about-product">
+                    <div class="container content-2">
+                        <div class="">
+                            <!-- link to kit kat image -->
+                            <!-- ///////////////////////////////////////////////////////////// -->
+                            <img src="<%= img %>" alt="" id="product-pic" class="pic">
+                            <!-- ///////////////////////////////////////////////////////////// -->
+                        </div>
+                        <div class="">
+                            <div class="small-info">
+                                <!-- Product name and price -->
+                                <!-- ///////////////////////////////////////////////////////////// -->
+                                <h3 id="product-name"><%= name %></h3>
+                                <h4 id="product-price"><%= price %></h4>
+                                <button type="button" class="btn btn-light">🛒 Add to cart</button>
+                                <!-- ///////////////////////////////////////////////////////////// -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product's detail-->
+                    <div class="container content-2">   
+                        <div class="container product-description">
+                            <!-- Product detail of kit kat -->
+                            <!-- ///////////////////////////////////////////////////////////// -->
+                            <h3>About product</h3>
+                            <!--Description of product-->
+                            <p id="product-info"><%= information %></p>
+                            <!-- ///////////////////////////////////////////////////////////// -->
+                        </div>
+                    </div>
+                </div>
+            </article>            
+        </main>
+
+        <!-- Footer for place an link or the ways to go to the other channel such as about us -->
+        <footer class="">
+            <div class="container" style="display: flex; justify-content: center;">
+                <div>
+                    <!-- This is the footer part that will link to the about us page -->
+                    <a href="Aboutus.html">
+                        <img src="image-1/Lewis.png" alt="" class="icon" style="border-radius: 10px;">
+                        About us
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        -->
+    </body>
+</html>

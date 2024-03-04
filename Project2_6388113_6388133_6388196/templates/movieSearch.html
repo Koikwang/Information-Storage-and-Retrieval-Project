@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Search</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://localhost:5000/static/movieSearch.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="http://localhost:5000/static/img/totoro.png">
+
+    <!-- Pre-load image -->
+    <link rel="preload" as="image" href="https://imgkub.com/images/2022/11/22/karigurashi01.jpg">
+    <link rel="preload" as="image" href="https://imgkub.com/images/2022/11/22/karigurashi02.jpg">
+    <link rel="preload" as="image" href="https://imgkub.com/images/2022/11/22/totoro02.jpg">
+    <link rel="preload" as="image" href="https://imgkub.com/images/2022/11/22/totoro03.jpg">
+    <link rel="preload" as="image" href="https://imgkub.com/images/2022/11/22/howl.jpg">
+  </head>
+
+  <div class="dropdown">
+    <button style="font-family: 'Titan One', sans-serif;" class="dropbtn">Movies Genre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      {% for genre in genres %}
+        <a style="font-family: 'Titan One', sans-serif;" href="http://localhost:5000/genre/{{ genre }}">{{ genre }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <body>
+    <div class="box">
+      <!-- header title -->
+      <header>
+        <h1 style="font-size: 68px; font-weight: 600;">Movie<br>Search</h1>
+      </header>
+      
+      <!-- search box -->
+      <div class="container">
+        <form action="{{ url_for('query_search') }}" method="GET" class="search-bar">
+          <input type="text" placeholder="Search your movie here" name="query"> 
+          <button type="submit"><img style="width: 27px;" src="http://localhost:5000/static/img/search-icon.png"></button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>

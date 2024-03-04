@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+* {
+    font-family: "Asap", sans-serif;
+    color: rgb(78, 77, 77);
+}
+
+/* header part */
+body header {
+    background-color: #CACCCE;
+    opacity: 85%;
+    width: auto;
+    height: 68px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.head-title {
+    
+    font-family:'Titan One',cursive;
+    /* background: -webkit-linear-gradient(60deg,#ff6161,#7a82da,#fd6a6a ); */
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    padding: 5px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+}
+/* go back icon to go to movie search page */
+.go-back {
+    margin: 0;
+    opacity: 80%;
+    padding: 15px 0px 10px 15px;
+}
+
+body {
+    /* background */
+    background-image: linear-gradient(rgba(234, 233, 233, 0.13), rgba(168, 165, 165, 0.1)),url("images/howl.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: saturate(45%);
+    opacity: 150%;
+    width: 100%;
+    min-height: 100vh;
+} 
+
+/* outside box */
+.container {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+
+    /* background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 30px; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.plot{
+    text-align: justify;
+    /*text-justify: inter-word;*/ /*not important just wanna try*/
+    margin-right: 20px;
+}
+
+/* inside each box */
+.box {
+    background-color: rgb(255, 255, 255, 0.9);
+    opacity: 95%;
+    box-shadow: 0px 0px 9px rgb(134, 129, 129);
+    border-radius: 15px;
+    margin: 10px; 
+    width: 430px;
+    height: auto;
+    margin-left: 35px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.title {
+    margin-top: 10px;
+}
+/* text */
+p {
+    font-size: 12px;
+    font-weight: 550;
+}
+
+/* poster image */
+.poster {
+    padding:25px 20px 25px 25px;
+    text-align: center;
+}
+
